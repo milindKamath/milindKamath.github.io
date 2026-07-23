@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Software & Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Your Name</h1>
+            <p class="subtitle">Senior Software Engineer | Data & Cloud Systems</p>
+            <p class="bio">Passionate about building scalable data architectures, distributed computing, and technical writing.</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+        <div class="container flex-nav">
+            <button class="tab-btn active" onclick="openTab('resume')"><i class="fas fa-file-alt"></i> Resume</button>
+            <button class="tab-btn" onclick="openTab('journals')"><i class="fas fa-book-open"></i> Journals & Papers</button>
+            <button class="tab-btn" onclick="openTab('blogs')"><i class="fas fa-blog"></i> Blogs</button>
+            <button class="tab-btn" onclick="openTab('code')"><i class="fas fa-code"></i> Codebase & Projects</button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container content">
+
+        <!-- RESUME TAB -->
+        <section id="resume" class="tab-content active">
+            <div class="section-header">
+                <h2>Experience & Education</h2>
+                <a href="resume.pdf" class="btn" download><i class="fas fa-download"></i> Download PDF Resume</a>
+            </div>
+
+            <div class="card">
+                <h3>Senior Software Engineer - Data</h3>
+                <p class="meta">Company Name | 2022 - Present</p>
+                <ul>
+                    <li>Engineered scalable data lakehouse solutions and automated PySpark pipelines.</li>
+                    <li>Optimized cloud warehouse queries, improving processing throughput by 40%.</li>
+                    <li>Implemented Medallion Architecture (Bronze/Silver/Gold) for enterprise reporting.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Master of Science in Computer Science</h3>
+                <p class="meta">Rochester Institute of Technology | 2021</p>
+                <p>Specialization: Big Data Analytics & Distributed Systems</p>
+            </div>
+        </section>
+
+        <!-- JOURNALS TAB -->
+        <section id="journals" class="tab-content">
+            <h2>Journals & Academic Publications</h2>
+            
+            <div class="card">
+                <h3>Comparative Analysis of Distributed Data Processing Frameworks</h3>
+                <p class="meta">Published in <em>International Journal of Computer Science & Engineering</em></p>
+                <p>An in-depth exploration evaluating performance metrics, execution speeds, and memory overhead across modern distributed compute engines.</p>
+                <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> View Journal Paper</a>
+            </div>
+        </section>
+
+        <!-- BLOGS TAB -->
+        <section id="blogs" class="tab-content">
+            <h2>Technical Blogs & Articles</h2>
+
+            <div class="card">
+                <h3>Demystifying the Medallion Architecture in Modern Lakehouses</h3>
+                <p class="meta">Published on Towards Data Science • 5 min read</p>
+                <p>A practical guide on structuring data into Bronze, Silver, and Gold layers to prevent data swamps and ensure analytical data quality.</p>
+                <a href="#" class="link-btn"><i class="fas fa-arrow-right"></i> Read Full Article</a>
+            </div>
+        </section>
+
+        <!-- CODEBASE / PROJECTS TAB -->
+        <section id="code" class="tab-content">
+            <h2>Featured Repositories & Projects</h2>
+
+            <div class="project-grid">
+                <div class="card project-card">
+                    <h3><i class="fab fa-github"></i> PySpark ETL Pipeline Framework</h3>
+                    <p>Modular PySpark pipeline template with automated data validation and automated schema enforcement.</p>
+                    <div class="tags">
+                        <span>Python</span><span>PySpark</span><span>Docker</span>
+                    </div>
+                    <a href="https://github.com/yourusername/pyspark-etl-framework" target="_blank" class="link-btn">View Code on GitHub</a>
+                </div>
+
+                <div class="card project-card">
+                    <h3><i class="fab fa-github"></i> Lakehouse Governance Suite</h3>
+                    <p>Lightweight metadata catalog and automated schema monitoring tool for cloud storage.</p>
+                    <div class="tags">
+                        <span>SQL</span><span>Snowflake</span><span>Dataform</span>
+                    </div>
+                    <a href="https://github.com/yourusername/lakehouse-governance" target="_blank" class="link-btn">View Code on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Your Name. Hosted completely free on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
